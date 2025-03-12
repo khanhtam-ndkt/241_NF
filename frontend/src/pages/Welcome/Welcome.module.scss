@@ -1,0 +1,668 @@
+.welcome_page {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #333;
+  background-color: #fff6ec;
+  padding: 20px;
+
+  .note_taking_simple {
+    background-color: #F8EEE2;
+    // border: 1px solid #ddd;
+    // border-radius: 10px;
+    // max-width: 800px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    width: 100%;
+   
+
+    .content {
+      flex: 1;
+      // padding-left:40px;
+      // margin-right: 100px;
+      // margin-left: 40px;
+      padding: 0 40px;
+      margin: 0;
+      font-family: 'Red Hat Display', sans-serif;
+      h2 {
+        font-size: 5rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        color:#4D2114;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 100;
+        word-break: break-word;
+
+        .highlight {
+          color: #f57c00; /* Màu cam cho chữ 'Note' */
+          font-weight: 300;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #4D2114;
+        margin-bottom: 15px;
+        font-weight: 300;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+          font-size: 1rem;
+
+          span {
+            font-weight: bold;
+            color: #f57c00;
+          }
+        }
+      }
+    }
+
+    .image {
+      flex: 1;
+      text-align: right;
+      // margin-right: 150px;
+      // margin-left: 50px;
+      margin: 0;
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+
+      }
+    }
+  }
+
+.connect {
+  .write_notes {
+    display: flex;
+    // flex-direction: row;
+    // align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0;
+    // gap: 20px;
+    // background-color: #fff6ec;
+    width: 100%;
+  
+    .box {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      // text-align: left;
+      position: relative;
+      margin-left: 350px;
+      // border: 2px solid #4D2114;
+
+      .icon-bg2 {
+        position: absolute;
+        top: -35px; 
+        right: 15px; 
+        width: 80px; 
+        height: 80px; 
+        z-index: 1;
+      }
+
+      .card {
+        width: 400px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        justify-content: flex-start;
+        text-align: left;
+        display: block;
+        
+        h3 {
+          font-size: 22px;
+          color: #333333;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 16px;
+          color: #555555;
+          line-height: 1.5;
+          margin-bottom: 20px;
+        }
+  
+        .goals {
+          margin-top: 10px;
+  
+          h3 {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+          }
+  
+          p {
+            font-size: 14px;
+            color: #333333;
+          }
+        }
+  
+        .what_to_do {
+          margin-top: 20px;
+  
+          h3 {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+          }
+  
+          ul {
+            list-style: none;
+            padding-left: 0;
+  
+            li {
+              font-size: 14px;
+              color: #333333;
+              margin-bottom: 8px;
+  
+              &:before {
+                content: '✔️';
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    /* Content Section */
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; /* Align to the right */
+      // position: relative;
+      margin-right: 350px;
+      margin-top: 80px;
+  
+      h2 {
+        font-size: 3em;
+        color: #f48024;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1.5em;
+        color: #4D2114;
+        font-weight: 300;
+      }
+    }
+  }
+  
+   // plan
+   .plan_day {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+    justify-content: space-between;
+
+    .content {
+      flex: 1;
+      // display: flex;
+      text-align: left;
+      margin-left: 350px;
+      margin-top: 80px;
+      h2 {
+        font-size: 3em;
+        color: #f57c00;
+        margin-bottom: 10px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 300;
+      }
+
+      p {
+        font-size: 1.5em;
+        color: #4D2114;
+        font-weight: 300;
+      }
+    }
+
+    .boxes {
+      text-align: center; /* Đảm bảo nội dung trong boxes được căn giữa */
+      margin-right: 0; /* Không cần margin-right vì nó đã ở bên phải */
+      width: 400px; /* Đặt kích thước cụ thể cho boxes */
+      padding: 20px;
+      background-color: #fff6ec;
+      border-radius: 16px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-right: 250px;
+      // flex: 1;
+    
+      .card {
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        h3 {
+          font-size: 1.5em;
+          color: #333333;
+          margin-bottom: 5px;
+        }
+  
+        p {
+          font-size: 1em;
+          color: #777777;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            font-size: 1em;
+            color: #404040;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+  
+            &:before {
+              content: "○";
+              color: #f48024; // Adjust color of the icon
+              margin-right: 10px;
+            }
+          }
+        }
+    
+        &.original {
+          width: 100%;
+          background-color: #fffdf7;
+          border: 2px solid #4D2114;
+          text-align: left;
+          position: relative;
+
+          .icon_bg3 {
+            position: absolute;
+            top: -40px; /* Điều chỉnh vị trí */
+            left: -40px; /* Điều chỉnh vị trí */
+            width: 70px; /* Kích thước hình ảnh */
+            height: 70px;
+            z-index: 1;
+            img {
+              width: 100%; /* Đảm bảo hình ảnh tuân theo kích thước container */
+              height: auto;
+            }
+          }
+        
+          .icon_plan {
+            position: absolute; /* Nếu cần định vị */
+            bottom: 10px; /* Điều chỉnh vị trí */
+            right: 10px; /* Điều chỉnh vị trí */
+            width: 50px; /* Kích thước hình ảnh */
+            height: 50px;
+            img {
+              width: 100%; /* Đảm bảo hình ảnh tuân theo kích thước container */
+              height: auto;
+            }
+          }
+        }
+    
+        &.primary,
+        &.secondary {
+          width: 48%; /* Chiếm 48% mỗi card */
+          background-color: #fffdf7;
+          border: 2px solid #4D2114;
+        }
+      }
+    
+      .task_row {
+        display: flex;
+        justify-content: space-between; 
+        width: 100%; 
+      }     
+    }
+  }
+
+  .time {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+    justify-content: space-between;
+
+    .pomo_image {
+      flex: 1;
+      text-align: left;
+      margin-left: 320px;
+      display: flex;
+      align-items: flex-start;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+     
+    }
+
+    .content {
+      flex: 1;
+      text-align: right;
+      margin-right: 200px;
+      margin-top: 70px;
+      display: flex;
+      align-items: flex-end;
+      gap: 15px;
+    }
+    
+    .image-container img {
+      width: 80px; /* Kích thước ảnh, có thể tùy chỉnh */
+      height: 80px;
+    }
+    
+    .text-container {
+      text-align: right; /* Căn chữ sang phải */
+    }
+    
+    .text-container h2 {
+      font-size: 3em;
+      color: #f57c00;
+      margin-bottom: 2px;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 300;
+    }
+    
+    .text-container p {
+      font-size: 1.5em;
+      color: #4D2114;
+      font-weight: 300;
+    }
+  }
+
+  // team 
+  .team {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 15px; 
+    margin-top: 50px; 
+
+    .team_image {
+      width: 40%; /* Ảnh chính chiếm nửa chiều rộng */
+      display: block;
+     
+      img {
+        width: 100%; /* Đảm bảo ảnh co giãn đúng chiều */
+        height: auto;
+        border-radius: 40px; /* Bo góc ảnh */
+        display: block;
+      }
+    }
+
+    .images_wrapper {
+      .content {
+        flex: 1;
+        // display: flex;
+        text-align: center;
+       
+        h2 {
+          font-size: 3em;
+          color: #f57c00;
+          margin-bottom: 10px;
+          font-family: 'Red Hat Display', sans-serif;
+          font-weight: 300;
+        }
+  
+        p {
+          font-size: 1.5em;
+          color: #4D2114;
+          font-weight: 300;
+        }
+      }
+      display: flex;
+      justify-content: center; /* Căn giữa toàn bộ ảnh */
+      align-items: center;
+      width: 100%;
+      max-width: 1200px; /* Giới hạn chiều rộng */
+      gap: 20px; /* Khoảng cách giữa các ảnh */
+
+  
+      .image_left, .image_right {
+        width: 20%; /* Các ảnh bên trái và phải có kích thước nhỏ hơn */
+        display: block;
+      }
+  
+      img {
+        width: 100%; /* Đảm bảo ảnh co giãn đúng chiều */
+        height: auto;
+        border-radius: 25px; /* Bo góc ảnh */
+        display: block;
+      }
+    }
+  }
+
+  .chatting {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 15px; 
+    margin-top: 50px; 
+
+    .chat_image {
+      width: 40%; /* Ảnh chính chiếm nửa chiều rộng */
+      display: block;
+     
+      img {
+        width: 100%; /* Đảm bảo ảnh co giãn đúng chiều */
+        height: auto;
+        border-radius: 40px; /* Bo góc ảnh */
+        display: block;
+      }
+    }
+
+   .images_wrapper {
+  display: flex;
+  justify-content: center; /* Căn giữa toàn bộ ảnh */
+  align-items: center;
+  width: 100%;
+  // max-width: 1200px; /* Giới hạn chiều rộng */
+  // gap: 5px; /* Giảm khoảng cách giữa các ảnh để chúng sát nhau hơn */
+
+  .content {
+    flex: 1;
+    text-align: center;
+    margin-left: 500px;
+    h2 {
+      font-size: 3em;
+      color: #f57c00;
+      margin-bottom: 10px;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #4D2114;
+      font-weight: 300;
+    }
+  }
+
+  .image_right {
+    width: 10%; /* Tăng nhẹ chiều rộng của ảnh bên phải để chúng cân đối hơn với phần nội dung */
+    display: block;
+    margin-right: 400px; /* Đưa ảnh bên phải gần nội dung hơn */
+  }
+
+  img {
+    width: 100%; /* Đảm bảo ảnh co giãn đúng chiều */
+    height: auto;
+    border-radius: 25px; /* Bo góc ảnh */
+    display: block;
+  }
+}
+
+}
+
+.ready {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Đảm bảo chiều cao chiếm toàn bộ viewport */
+  text-align: center; /* Căn giữa nội dung văn bản */
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các phần tử bên trong .content */
+    justify-content: center;
+    text-align: center; /* Căn giữa nội dung text */
+    
+  }
+
+  .ready_image {
+    img {
+      max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng */
+      height: auto; /* Giữ tỉ lệ ảnh */
+    }
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: #4D2114;
+    font-weight: 400;
+    margin-top: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.4; /* Điều chỉnh độ cao dòng để văn bản dễ nhìn */
+    
+    span.highlight {
+      font-family: 'Red Hat Display', sans-serif;
+      color: #f57c00; /* Màu cho phần highlight */
+    }
+  }
+    .button {
+      margin-top: 20px; 
+      padding: 12px 30px; /* Kích thước của nút */
+      font-size: 1.2em; /* Kích thước chữ trong nút */
+      background-color: #f57c00; /* Màu nền của nút */
+      color: white; /* Màu chữ */
+      border: 2px solid #4D2114; /* Xóa viền */
+      border-radius: 30px; 
+      cursor: pointer; 
+      transition: background-color 0.3s ease; /* Hiệu ứng hover */
+      font-family: 'Red Hat Display', sans-serif;
+  
+      &:hover {
+        background-color: #e64a19; /* Màu nền khi hover */
+      }
+    
+  }
+}
+
+}
+
+.contact {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #705C53; // Màu nền tổng quan
+    padding: 3rem 1rem;
+    border-radius: 30px;
+
+    .get_touch {
+      flex-basis: 40%; // Chiều rộng cụ thể của hình chữ nhật (60% container)
+      margin-left: auto; // Đẩy sang phải
+      background-color: #fff; // Hình chữ nhật trắng
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      align-items: right;
+      border: 1px solid #4D2114;
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #000000;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+        color: #666;
+        font-size: 1rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+          margin-bottom: 1rem;
+          padding: 0.75rem;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          font-size: 1rem;
+          border: 1.5px solid #4D2114;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+          &:focus {
+            outline: none;
+            border-color: #e67e22;
+          }
+        }
+
+        button {
+          background-color: #e67e22;
+          color: #fff;
+          padding: 0.75rem;
+          border-radius: 10px;
+          font-size: 1rem;
+          cursor: pointer;
+          border: 1.5px solid #4D2114;
+
+          &:hover {
+            background-color: #d35400;
+          }
+        }
+      }
+    }
+
+    .content {
+      flex: 1;
+      align-items: left;
+      h4 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-family: 'Red Hat Display', sans-serif;
+        color: #FFFFFF;
+        font-weight: 50;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: #FFFFFF;
+        font-weight: 200;
+      }
+
+      a {
+        color: #e67e22;
+        text-decoration: underline;
+
+        &:hover {
+          color: #d35400;
+        }
+      }
+    }
+  }
+}
+
+}

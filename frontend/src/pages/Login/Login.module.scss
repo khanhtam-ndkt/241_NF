@@ -1,0 +1,169 @@
+.wrapper {
+    font-family: "Rubik";
+}
+
+.header {
+    height: 60px;
+  width: 100%;
+  border-bottom: 1.2px solid var(--brown, #4d2114);
+  background: #705c53;
+  display: flex;
+
+  align-items: center;
+  padding-left: 40px;
+  gap: 6px;
+  h1 {
+      color: #fff;
+      text-decoration: underline #ff7801 1px;
+      font-weight: 300;
+      font-size: 25px;
+  }
+  image {
+    width: 16px; /* Kích thước icon */
+    height: 16px; 
+  }
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    background: #f8f5f2;
+
+    .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 500px;
+            height: auto;
+        }
+    }
+
+    .right {
+        flex: 0 0 750px;
+        padding: 30px;
+        background: #dfd3c3;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 1000;
+            color: #4d2114;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            label {
+                font-size: 18px;
+                color: #4d2114;
+                // gap: 8px;
+                margin-bottom: 5px;
+
+                input {
+                    width: 100%;
+                    height: 50px;
+                    border: 1px solid #ceb6a0;
+                    border-radius: 5px;
+                    padding: 0 10px;
+                    background: rgba(208, 184, 168, 0.6);
+                    outline: none;
+                }
+            }
+
+            .password-wrapper {
+                position: relative; // Để định vị icon mắt dựa trên ô nhập liệu
+                display: flex;
+            
+                input {
+                    width: 100%;
+                    height: 50px;
+                    padding-right: 40px; // Chừa khoảng trống cho icon ở bên phải
+                    border: 1px solid #ceb6a0;
+                    border-radius: 5px;
+                    padding: 0 10px;
+                    background: rgba(208, 184, 168, 0.6);
+                    outline: none;
+                }
+            
+                .toggle-password {
+                    position: absolute; // Đặt icon trong ô nhập
+                    right: 10px; // Căn chỉnh icon cách mép phải của ô nhập 10px
+                    top: 50%; // Căn giữa icon theo chiều dọc
+                    transform: translateY(-50%);
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: #4d2114;
+                    transition: all 0.3s;
+            
+                    &:hover {
+                        color: #705c53;
+                    }
+                }
+            }
+            
+
+            .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 18px;
+                margin-bottom: 20px;
+            
+                label {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px; // Khoảng cách giữa checkbox và chữ
+                    font-size: 18px;
+                    white-space: nowrap; // Ngăn chữ xuống dòng
+
+                    input[type="checkbox"] {
+                        width: 20px; // Tăng chiều rộng checkbox
+                        height: 20px; // Tăng chiều cao checkbox
+                        cursor: pointer; // Thêm hiệu ứng trỏ chuột
+                    }
+                }
+            
+                a {
+                    text-decoration: none;
+                    color: #705C53;
+                    transition: color 0.3s;
+            
+                    &:hover {
+                        color: #4d2114;
+                    }
+                }
+            }
+        }
+
+        .login-button {
+            width: 100%;
+            height: 50px;
+            border: none;
+            background: #ceb6a0;
+            color: #705C53;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background: #4d2114;
+                color: white;
+            }
+        }
+    }
+}

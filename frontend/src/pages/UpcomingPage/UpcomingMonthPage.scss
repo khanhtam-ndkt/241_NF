@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap');
+
+$n1-color: #F8EDE3;
+$n2-color: #DFD3C3;
+$n3-color: #D0B8A8;
+$n4-color: #8D493A;
+$n5-color: #d2c2ac;
+$background-color: $n1-color;
+$date-color: $n4-color;
+$line-color: $n3-color;
+$switch-bg-color: $n1-color;
+$switch-text-color: black;
+$switch-hover-bg-color: $n5-color;
+$switch-hover-text-color: black;
+
+.upcoming-month-container {
+    background-color: $background-color;
+    display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.heading-container {
+    align-items: center;
+    border-bottom: 2px solid $line-color;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.upcoming-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-bottom: 20px;
+}
+
+.date-heading {
+    color: $date-color;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.month-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.month-nav {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.month-nav.prev {
+    margin-right: 10px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-weekday {
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendar-day {
+    background-color: $n2-color;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 140px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.calendar-day.empty {
+    background-color: transparent;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notes,
+.plans {
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+.note,
+.plan {
+    background-color: $n3-color;
+    border-radius: 4px;
+    padding: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+.switch-button {
+    background-color: $switch-bg-color;
+    border: none;
+    border-radius: 20px;
+    color: $switch-text-color;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: $switch-hover-bg-color;
+        color: $switch-hover-text-color;
+    }
+}
